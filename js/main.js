@@ -79,5 +79,8 @@ function dragLeave(){
 
 function dragDrop(){
 
+    this.className = 'empty';
+
+    this.append(fill); // Appends fill element to empty box
 
 }
