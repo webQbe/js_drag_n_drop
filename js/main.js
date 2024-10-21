@@ -53,26 +53,31 @@ for(const empty of empties){
 // Define Functions for Empties
 
 function dragOver(e){
-    
+
     e.preventDefault(); // To make dragDrop() run
-    console.log('dragged over!');
+
 
 }
 
-function dragEnter(){
+function dragEnter(e){
 
-    console.log('entered!');
+    e.preventDefault();
+
+    // Append (+=) a class to empty box (both .empty & .hovered)
+    this.className += ' hovered'; 
+
 
 }
 
 function dragLeave(){
 
-    console.log('left!');
+    // Replace (=) classes with '.empty' (.hovered class removed)
+    this.className = 'empty';
+    
 
 }
 
 function dragDrop(){
 
-    console.log('dropped!');
 
 }
