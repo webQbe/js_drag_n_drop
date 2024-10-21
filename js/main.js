@@ -14,12 +14,12 @@ fill.addEventListener('dragend', dragEnd);
 // Drag Functions
 function dragStart(){
 
-    console.log('Dragging started!');
-
+    // Add classes to fill element
+    this.className += ' hold'; // This does not clear the box
+    setTimeout(() => (this.className = 'invisible'), 0); // This adds invisible class & clears box when pulling image
 }
 
 function dragEnd(){
 
-    console.log('Dragging ended!');
 
 }
