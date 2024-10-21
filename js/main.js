@@ -48,3 +48,31 @@ for(const empty of empties){
     empty.addEventListener('drop', dragDrop);
 
 }
+
+
+// Define Functions for Empties
+
+function dragOver(e){
+    
+    e.preventDefault(); // To make dragDrop() run
+    console.log('dragged over!');
+
+}
+
+function dragEnter(){
+
+    console.log('entered!');
+
+}
+
+function dragLeave(){
+
+    console.log('left!');
+
+}
+
+function dragDrop(){
+
+    console.log('dropped!');
+
+}
