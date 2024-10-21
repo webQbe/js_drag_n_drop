@@ -26,3 +26,26 @@ body{
 
 }
 
+/* Click & Hold Style */
+.hold{
+
+    border: solid #ccc 4px;
+
+}
+
+/* Style for hover over empty box  */
+.hovered {
+
+    background: #f4f4f4;
+    border-style: dashed;
+
+}
+
+.invisible {
+
+    display: none;
+
+}
+
+
+
