@@ -21,5 +21,6 @@ function dragStart(){
 
 function dragEnd(){
 
+    this.className = 'fill'; // This returns image back to .fill on mouse release
 
 }
